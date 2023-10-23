@@ -95,6 +95,11 @@ button {
     background-color: hsl(var(--clr-neon-green));
 }
 
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 50px hsl(var(--clr-neon-green));
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
