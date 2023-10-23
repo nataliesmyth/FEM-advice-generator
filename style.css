@@ -9,6 +9,7 @@
     --ff-primary: 'Manrope', sans-serif;
 
     --fs-small: 0.6875rem;
+    --fs-medium: 0.8125;
     --fs-large: 1.5rem;
 
     --fw-primary: 800;
@@ -60,7 +61,7 @@ main {
     text-transform: uppercase;
 }
 
-.advice-number {
+.advice-heading {
     color: hsl(var(--clr-neon-green));
     font-size: var(--fs-small);
     letter-spacing: 0.21606rem; ;
@@ -73,6 +74,10 @@ main {
 
 .divider-img {
     padding-block-end: .75em;
+}
+
+.divider-img-desktop {
+    display: none;
 }
 
 button {
@@ -91,7 +96,36 @@ button {
 }
 
 .attribution {
+    font-size: 11px;
+    text-align: center;
     position: relative;
     margin-block-start: 2em;
     padding-block-start: 3em;
+    color: hsl(var(--clr-light-cyan));
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 90rem) {
+    .container {
+        width: 33.75rem;
+        height: 20.75rem;
+        justify-content: space-evenly;
+    }
+
+    .advice-heading {
+        font-size: var(--fs-medium);
+    }
+
+    .divider-img {
+        display: none;
+    }
+
+    .divider-img-desktop {
+        display: block;
+    }
+
+    
 }
